@@ -1820,8 +1820,9 @@ void ExpTrunc(ZZ_pX& x, const ZZ_pX& a, long n)
       LogicError("ExpTrunc: bad args");
    if (ConstTerm(a) != 0)
       LogicError("ExpTrunc: nonzero constant term");
-   ZZ_pX y;
-   ExpTruncFast(x, y, a, n);
+   ZZ_pX la, y;
+   trunc(la, a, n);
+   ExpTruncFast(x, y, la, n);
 }
 
 

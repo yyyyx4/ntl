@@ -1735,8 +1735,9 @@ void ExpTrunc(zz_pX& x, const zz_pX& a, long n)
       LogicError("ExpTrunc: bad args");
    if (ConstTerm(a) != 0)
       LogicError("ExpTrunc: nonzero constant term");
-   zz_pX y;
-   ExpTruncFast(x, y, a, n);
+   zz_pX la, y;
+   trunc(la, a, n);
+   ExpTruncFast(x, y, la, n);
 }
 
 
