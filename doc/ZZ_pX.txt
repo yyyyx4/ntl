@@ -444,7 +444,7 @@ ZZ_pX InvTrunc(const ZZ_pX& a, long n);
 
 void ExpTrunc(ZZ_pX& x, const ZZ_pX& a, long n);
 ZZ_pX ExpTrunc(const ZZ_pX& a, long n);
-// x = exp(a) % X^n
+// x = exp(a) % X^n.  Must have ConstTerm(a) == 0.
 
 /**************************************************************************\
 
