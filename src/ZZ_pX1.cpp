@@ -1803,7 +1803,7 @@ static void ExpTruncFast(ZZ_pX& f, ZZ_pX& g, const ZZ_pX& h, long prec)
       q.normalize();
 
       // step 5
-      unsigned long length = NTL::min(deg(q)+2, prec);
+      long length = NTL::min(deg(q)+2, prec);
       ZZ_pX intq;
       intq.SetLength(length);
       intq[0] = 0;
