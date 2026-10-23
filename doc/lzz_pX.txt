@@ -433,7 +433,7 @@ zz_pX InvTrunc(const zz_pX& a, long n);
 // computes x = a^{-1} % X^n.  Must have ConstTerm(a) invertible.
 
 void ExpTrunc(zz_pX& x, const zz_pX& a, long n);
-zz_pX ExpTrunc(const zz_pX& a, long n)
+zz_pX ExpTrunc(const zz_pX& a, long n);
 // x = exp(a) % X^n
 
 /**************************************************************************\
